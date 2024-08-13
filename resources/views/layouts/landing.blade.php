@@ -12,6 +12,9 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        {{-- get css public/build/assets/app.css --}}
+        {{-- <link rel="stylesheet" href="{{ asset('build/assets/app-Dp6PuIMS.css') }}">
+        <script src="{{ asset('build/assets/app-CH09qwMe.js') }}"></script> --}}
 
     </head>
     <body class="font-sans antialiased">
@@ -20,6 +23,9 @@
 
             <main>
                 @yield('content')
+            </main>
+            <main>
+                {{ $slot }}
             </main>
         </div>
     </body>
