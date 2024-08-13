@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ tugas2-backend ]
+    branches: [ main ]
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
